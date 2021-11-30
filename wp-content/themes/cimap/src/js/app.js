@@ -1,1 +1,1 @@
-console.log('hello its con');
+import 'bootstrap';
