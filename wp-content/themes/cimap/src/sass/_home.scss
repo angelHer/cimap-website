@@ -9,3 +9,35 @@
         }
     }
 }
+
+.services {
+    &__image {
+        // width: calc(100% / 7);
+    }
+    &__service {
+        background: #323232;
+        color: $cimap-orange;
+    }
+    &__tooltip {
+        // background: red;
+        // width: 300px;
+        // height: 250px;
+    }
+}
+.services__tooltip > .tooltip-arrow {
+    // color: blue;
+}
+
+.services__tooltip > .tooltip-inner {
+    background: rgba(233, 233, 233, 0.952);
+    min-width: 300px;
+    height: 250px;
+    color: black;
+    text-align: left;
+}
+
+@include media-breakpoint-up(lg) {
+    .services__service {
+        flex: 1 0 14%;
+    }
+}

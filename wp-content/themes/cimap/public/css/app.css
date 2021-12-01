@@ -11301,3 +11301,21 @@ textarea.form-control-lg {
   color: #ff7300;
   font-weight: bold;
 }
+
+.services__service {
+  background: #323232;
+  color: #ff7300;
+}
+.services__tooltip > .tooltip-inner {
+  background: rgba(233, 233, 233, 0.952);
+  min-width: 300px;
+  height: 250px;
+  color: black;
+  text-align: left;
+}
+
+@media (min-width: 992px) {
+  .services__service {
+    flex: 1 0 14%;
+  }
+}

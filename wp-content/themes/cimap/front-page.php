@@ -31,4 +31,78 @@
     </div>
 </div>
 
+<!-- Productos / servicios -->
+<div>
+    <div class="row w-100 m-0">
+        <div class="col-6 col-sm-4 col-md-2 col-lg p-0 services__service">
+            <img
+                class="services__image img-fluid"
+                src="<?php echo home_url(); ?>/wp-content/uploads/2021/12/boton-analisis.jpg"
+                alt=""
+                data-bs-custom-class="services__tooltip" data-bs-toggle="tooltip" data-bs-html="true" title="<h2>The tooltip text Extra text</h2><p>contenido del tooltip</p><a href='#'>Mas</a>"
+            >
+            <div class="px-2">Síntesis digital de noticias</div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 col-lg p-0 services__service">
+            <img class="services__image img-fluid" src="<?php echo home_url(); ?>/wp-content/uploads/2021/12/boton-analisis.jpg" alt="">
+            <div class="px-2">Síntesis digital de noticias</div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 col-lg p-0 services__service">
+            <img class="services__image img-fluid" src="<?php echo home_url(); ?>/wp-content/uploads/2021/12/boton-analisis.jpg" alt="">
+            <div class="px-2">Síntesis digital de noticias</div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 col-lg p-0 services__service">
+            <img class="services__image img-fluid" src="<?php echo home_url(); ?>/wp-content/uploads/2021/12/boton-analisis.jpg" alt="">
+            <div class="px-2">Síntesis digital de noticias</div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 col-lg p-0 services__service">
+            <img class="services__image img-fluid" src="<?php echo home_url(); ?>/wp-content/uploads/2021/12/boton-analisis.jpg" alt="">
+            <div class="px-2">Síntesis digital de noticias</div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 col-lg p-0 services__service">
+            <img class="services__image img-fluid" src="<?php echo home_url(); ?>/wp-content/uploads/2021/12/boton-analisis.jpg" alt="">
+            <div class="px-2">Síntesis digital de noticias</div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 col-lg p-0 services__service">
+            <img
+                class="services__image img-fluid"
+                src="<?php echo home_url(); ?>/wp-content/uploads/2021/12/boton-analisis.jpg"
+                alt=""
+                data-bs-custom-class="services__tooltip" data-bs-toggle="tooltip" data-bs-html="true" title="The tooltip text Extra text"
+            >
+            <div class="px-2">Síntesis digital de noticias</div>
+        </div>
+
+
+        <div class="col-6 col-sm-4 col-md-2 col-lg p-0 services__service">
+            <img class="services__image img-fluid" src="<?php echo home_url(); ?>/wp-content/uploads/2021/12/boton-analisis.jpg" alt="">
+            <div class="px-2">Síntesis digital de noticias</div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 col-lg p-0 services__service">
+            <img class="services__image img-fluid" src="<?php echo home_url(); ?>/wp-content/uploads/2021/12/boton-analisis.jpg" alt="">
+            <div class="px-2">Síntesis digital de noticias</div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 col-lg p-0 services__service">
+            <img class="services__image img-fluid" src="<?php echo home_url(); ?>/wp-content/uploads/2021/12/boton-analisis.jpg" alt="">
+            <div class="px-2">Síntesis digital de noticias</div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 col-lg p-0 services__service">
+            <img class="services__image img-fluid" src="<?php echo home_url(); ?>/wp-content/uploads/2021/12/boton-analisis.jpg" alt="">
+            <div class="px-2">Síntesis digital de noticias</div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 col-lg p-0 services__service">
+            <img class="services__image img-fluid" src="<?php echo home_url(); ?>/wp-content/uploads/2021/12/boton-analisis.jpg" alt="">
+            <div class="px-2">Síntesis digital de noticias</div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 col-lg p-0 services__service">
+            <img class="services__image img-fluid" src="<?php echo home_url(); ?>/wp-content/uploads/2021/12/boton-analisis.jpg" alt="">
+            <div class="px-2">Síntesis digital de noticias</div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2 col-lg p-0 services__service">
+            <img class="services__image img-fluid" src="<?php echo home_url(); ?>/wp-content/uploads/2021/12/boton-analisis.jpg" alt="">
+            <div class="px-2">Síntesis digital de noticias</div>
+        </div>
+    </div>
+</div>
+
 <?php get_footer(); ?>
