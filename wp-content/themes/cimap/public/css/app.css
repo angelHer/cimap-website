@@ -11281,8 +11281,23 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-header {
-  width: 100%;
+.header__logo {
   height: 50px;
-  background: #ff7300;
+}
+
+.icons-list {
+  font-size: xx-large;
+}
+.icons-list__icon {
+  color: #adb5bd;
+}
+
+.about {
+  background-image: url(../../public/images/home/nosotros.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about__text--highlighted {
+  color: #ff7300;
+  font-weight: bold;
 }

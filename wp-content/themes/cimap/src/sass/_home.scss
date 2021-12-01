@@ -1,0 +1,11 @@
+.about {
+    background-image: url(../../public/images/home/nosotros.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__text {
+        &--highlighted {
+            color: $cimap-orange;
+            font-weight: bold;
+        }
+    }
+}

@@ -4,6 +4,7 @@ function add_theme_scripts() {
     wp_enqueue_style( 'style', get_stylesheet_uri() );
 
     wp_enqueue_style( 'styles', get_template_directory_uri() . '/public/css/app.css', array(), '1', 'all');
+    wp_enqueue_style( 'fontawesome', 'https://use.fontawesome.com/releases/v5.15.4/css/all.css', array(), '1', 'all');
 
     wp_enqueue_script('jquery');
     // wp_enqueue_script( 'popper', 'https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js', array ('jquery'), 2.10, true);
