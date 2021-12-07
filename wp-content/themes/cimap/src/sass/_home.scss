@@ -41,3 +41,13 @@
         flex: 1 0 14%;
     }
 }
+
+.blog {
+    &__card-title {
+        color: $cimap-orange;
+    }
+    &__link {
+        color: $cimap-link;
+        text-decoration: none;
+    }
+}

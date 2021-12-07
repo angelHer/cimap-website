@@ -11319,3 +11319,10 @@ textarea.form-control-lg {
     flex: 1 0 14%;
   }
 }
+.blog__card-title {
+  color: #ff7300;
+}
+.blog__link {
+  color: #006eff;
+  text-decoration: none;
+}

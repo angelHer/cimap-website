@@ -35,12 +35,7 @@
 <div>
     <div class="row w-100 m-0">
         <div class="col-6 col-sm-4 col-md-2 col-lg p-0 services__service">
-            <img
-                class="services__image img-fluid"
-                src="<?php echo home_url(); ?>/wp-content/uploads/2021/12/boton-analisis.jpg"
-                alt=""
-                data-bs-custom-class="services__tooltip" data-bs-toggle="tooltip" data-bs-html="true" title="<h2>The tooltip text Extra text</h2><p>contenido del tooltip</p><a href='#'>Mas</a>"
-            >
+            <img class="services__image img-fluid" src="<?php echo home_url(); ?>/wp-content/uploads/2021/12/boton-analisis.jpg" alt="" data-bs-custom-class="services__tooltip" data-bs-toggle="tooltip" data-bs-html="true" title="<h2>The tooltip text Extra text</h2><p>contenido del tooltip</p><a href='#'>Mas</a>">
             <div class="px-2">Síntesis digital de noticias</div>
         </div>
         <div class="col-6 col-sm-4 col-md-2 col-lg p-0 services__service">
@@ -64,12 +59,7 @@
             <div class="px-2">Síntesis digital de noticias</div>
         </div>
         <div class="col-6 col-sm-4 col-md-2 col-lg p-0 services__service">
-            <img
-                class="services__image img-fluid"
-                src="<?php echo home_url(); ?>/wp-content/uploads/2021/12/boton-analisis.jpg"
-                alt=""
-                data-bs-custom-class="services__tooltip" data-bs-toggle="tooltip" data-bs-html="true" title="The tooltip text Extra text"
-            >
+            <img class="services__image img-fluid" src="<?php echo home_url(); ?>/wp-content/uploads/2021/12/boton-analisis.jpg" alt="" data-bs-custom-class="services__tooltip" data-bs-toggle="tooltip" data-bs-html="true" title="The tooltip text Extra text">
             <div class="px-2">Síntesis digital de noticias</div>
         </div>
 
@@ -105,4 +95,74 @@
     </div>
 </div>
 
+<!-- Blog -->
+<div class="container">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+            <div class="card border-0">
+                <img src="<?php echo home_url(); ?>/wp-content/uploads/2021/12/9_2021_1632445184764-150x150.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title blog__card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+                <div class="card-footer bg-transparent border-0">
+                    <a class="blog__link" href="#">Ver más...</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card border-0">
+                <img src="<?php echo home_url(); ?>/wp-content/uploads/2021/12/9_2021_1632445184764-150x150.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title blog__card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+                <div class="card-footer bg-transparent border-0">
+                    <a class="blog__link" href="#">Ver más...</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card border-0">
+                <img src="<?php echo home_url(); ?>/wp-content/uploads/2021/12/9_2021_1632445184764-150x150.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title blog__card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+                <div class="card-footer bg-transparent border-0">
+                    <a class="blog__link" href="#">Ver más...</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card border-0">
+                <img src="<?php echo home_url(); ?>/wp-content/uploads/2021/12/9_2021_1632445184764-150x150.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title blog__card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+                <div class="card-footer bg-transparent border-0">
+                    <a class="blog__link" href="#">Ver más...</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card border-0">
+                <img src="<?php echo home_url(); ?>/wp-content/uploads/2021/12/9_2021_1632445184764-150x150.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title blog__card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+                <div class="card-footer bg-transparent border-0">
+                    <a class="blog__link" href="#">Ver más...</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- clientes -->
+<div class="container">
+
+</div>
 <?php get_footer(); ?>
