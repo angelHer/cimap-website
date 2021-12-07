@@ -163,6 +163,52 @@
 
 <!-- clientes -->
 <div class="container">
+    <h1>Clientes</h1>
+    <div class="row row-cols-2 row-cols-md-5 g-4">
+        <div class="col">
+            <img src="<?php echo home_url(); ?>/wp-content/uploads/2021/12/9_2021_1632445184764-150x150.png" class="card-img-top" alt="...">
+        </div>
+        <div class="col">
+            <img src="<?php echo home_url(); ?>/wp-content/uploads/2021/12/9_2021_1632445184764-150x150.png" class="card-img-top" alt="...">
+        </div>
+        <div class="col">
+            <img src="<?php echo home_url(); ?>/wp-content/uploads/2021/12/9_2021_1632445184764-150x150.png" class="card-img-top" alt="...">
+        </div>
+        <div class="col">
+            <img src="<?php echo home_url(); ?>/wp-content/uploads/2021/12/9_2021_1632445184764-150x150.png" class="card-img-top" alt="...">
+        </div>
+        <div class="col">
+            <img src="<?php echo home_url(); ?>/wp-content/uploads/2021/12/9_2021_1632445184764-150x150.png" class="card-img-top" alt="...">
+        </div>
+        <div class="col">
+            <img src="<?php echo home_url(); ?>/wp-content/uploads/2021/12/9_2021_1632445184764-150x150.png" class="card-img-top" alt="...">
+        </div>
+    </div>
+</div>
 
+<!-- Contacto -->
+<div>
+    <div class="row justify-content-center">
+        <div class="col-4">
+            <h2>Contacto</h2>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                    <label for="floatingTextarea">Comments</label>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            Mapa
+        </div>
+    </div>
 </div>
 <?php get_footer(); ?>
