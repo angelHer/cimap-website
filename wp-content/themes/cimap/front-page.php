@@ -1,19 +1,42 @@
 <?php get_header(); ?>
 
+<?php
+    $templateUri = get_template_directory_uri();
+    $slides =  [
+        (object) [
+            'image' => "" . $templateUri . "/public/images/home/carrousel/imagen1.jpg"
+        ],
+        (object) [
+            'image' => "" . $templateUri . "/public/images/home/carrousel/imagen2.jpg"
+        ],
+        (object) [
+            'image' => "" . $templateUri . "/public/images/home/carrousel/imagen3.jpg"
+        ]
+    ];
+?>
+
 <!-- Carrousel -->
-<div class="content">
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="<?php echo home_url(); ?>/wp-content/themes/cimap/public/images/home/carrousel/imagen1.jpg" class="d-block w-100" alt="">
-            </div>
-            <div class="carousel-item">
-                <img src="<?php echo home_url(); ?>/wp-content/themes/cimap/public/images/home/carrousel/imagen2.jpg" class="d-block w-100" alt="">
-            </div>
-            <div class="carousel-item">
-                <img src="<?php echo home_url(); ?>/wp-content/themes/cimap/public/images/home/carrousel/imagen3.jpg" class="d-block w-100" alt="">
-            </div>
+<div class="content home">
+    <div id="carouselExampleSlidesOnly" class="carousel slide h-100" data-bs-ride="carousel">
+        <div class="carousel-inner h-100">
+            <?php
+                foreach($slides as $key => $slide) {
+            ?>
+                <div class="carousel-item <?php if ($key===0) { echo 'active'; }?> h-100">
+                    <div class="home__carousel-steps h-100" style="background-image: url(<?php echo $slide->image; ?>)"></div>
+                </div>
+            <?php
+                }
+            ?>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
 </div>
 

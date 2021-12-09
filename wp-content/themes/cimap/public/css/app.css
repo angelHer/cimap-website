@@ -11292,6 +11292,19 @@ textarea.form-control-lg {
   color: #adb5bd;
 }
 
+.home {
+  height: 75vh;
+}
+.home__carousel-steps {
+  background-color: rgba(0, 0, 0, 0);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll, scroll;
+  background-size: cover;
+  background-origin: padding-box, padding-box;
+  background-clip: border-box, border-box;
+}
+
 .about {
   background-image: url(../../public/images/home/nosotros.jpg);
   background-repeat: no-repeat;
