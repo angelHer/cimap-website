@@ -11307,8 +11307,20 @@ textarea.form-control-lg {
 
 .about {
   background-image: url(../../public/images/home/nosotros.jpg);
+  background-color: rgba(0, 0, 0, 0);
+  background-position: center center;
   background-repeat: no-repeat;
+  background-attachment: scroll, scroll;
   background-size: cover;
+  background-origin: padding-box, padding-box;
+  background-clip: border-box, border-box;
+  height: 60vh;
+}
+.about__title {
+  text-transform: uppercase;
+  color: #dfdfdf;
+  font-size: 60px;
+  font-weight: bold;
 }
 .about__text--highlighted {
   color: #ff7300;
@@ -11319,12 +11331,17 @@ textarea.form-control-lg {
   background: #323232;
   color: #ff7300;
 }
+.services__tooltip-title {
+  color: #ff7300;
+}
+
 .services__tooltip > .tooltip-inner {
   background: rgba(233, 233, 233, 0.952);
   min-width: 300px;
   height: 250px;
   color: black;
   text-align: left;
+  padding: 10px;
 }
 
 @media (min-width: 992px) {

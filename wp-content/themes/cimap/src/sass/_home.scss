@@ -13,8 +13,20 @@
 
 .about {
     background-image: url(../../public/images/home/nosotros.jpg);
+    background-color: rgba(0, 0, 0, 0);
+    background-position: center center;
     background-repeat: no-repeat;
+    background-attachment: scroll, scroll;
     background-size: cover;
+    background-origin: padding-box, padding-box;
+    background-clip: border-box, border-box;
+    height: 60vh;
+    &__title {
+        text-transform: uppercase;
+        color: $cimap-title;
+        font-size: 60px;
+        font-weight: bold;
+    }
     &__text {
         &--highlighted {
             color: $cimap-orange;
@@ -32,9 +44,9 @@
         color: $cimap-orange;
     }
     &__tooltip {
-        // background: red;
-        // width: 300px;
-        // height: 250px;
+        &-title {
+            color: $cimap-orange;
+        }
     }
 }
 .services__tooltip > .tooltip-arrow {
@@ -47,6 +59,7 @@
     height: 250px;
     color: black;
     text-align: left;
+    padding: 10px;
 }
 
 @include media-breakpoint-up(lg) {
