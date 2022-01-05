@@ -13,6 +13,69 @@
             'image' => "" . $templateUri . "/public/images/home/carrousel/imagen3.jpg"
         ]
     ];
+
+    $clients = [
+        (object) [
+            'image' => "" . $templateUri . "/public/images/clients/1-capitan.png"
+        ],
+        (object) [
+            'image' => "" . $templateUri . "/public/images/clients/2-Edumac.png"
+        ],
+        (object) [
+            'image' => "" . $templateUri . "/public/images/clients/3-engrande.png"
+        ],
+        (object) [
+            'image' => "" . $templateUri . "/public/images/clients/4-cachimochi.png"
+        ],
+        (object) [
+            'image' => "" . $templateUri . "/public/images/clients/5-SalonFama.png"
+        ],
+        (object) [
+            'image' => "" . $templateUri . "/public/images/clients/6-LugarBife.png"
+        ],
+        (object) [
+            'image' => "" . $templateUri . "/public/images/clients/7-PuertoBife.png"
+        ],
+        (object) [
+            'image' => "" . $templateUri . "/public/images/clients/8-publimedios.png"
+        ],
+        (object) [
+            'image' => "" . $templateUri . "/public/images/clients/9-MundoTuzo.png"
+        ],
+        (object) [
+            'image' => "" . $templateUri . "/public/images/clients/10-BifeSports.png"
+        ],
+        (object) [
+            'image' => "" . $templateUri . "/public/images/clients/11-MundoFutbol.png"
+        ],
+        (object) [
+            'image' => "" . $templateUri . "/public/images/clients/12-Veova.png"
+        ],
+        (object) [
+            'image' => "" . $templateUri . "/public/images/clients/13-Hidalgo.png"
+        ],
+        (object) [
+            'image' => "" . $templateUri . "/public/images/clients/14-renace.png"
+        ],
+        (object) [
+            'image' => "" . $templateUri . "/public/images/clients/15-RDC.png"
+        ],
+        (object) [
+            'image' => "" . $templateUri . "/public/images/clients/16-Tulancingo.png"
+        ],
+        (object) [
+            'image' => "" . $templateUri . "/public/images/clients/17-Tuzoofari.png"
+        ],
+        (object) [
+            'image' => "" . $templateUri . "/public/images/clients/18-Hidalgo.png"
+        ],
+        (object) [
+            'image' => "" . $templateUri . "/public/images/clients/19-GrupoPachuca.png"
+        ],
+        (object) [
+            'image' => "" . $templateUri . "/public/images/clients/20-AlmaQuezada.png"
+        ]
+    ];
 ?>
 
 <!-- Carrousel -->
@@ -55,7 +118,10 @@
 </div>
 
 <!-- Productos / servicios -->
-<div>
+<div class="pt-5">
+    <div class="row row-cols my-5">
+        <h2 class="about__title text-center">Servicios/Productos</h2>
+    </div>
     <div class="row w-100 m-0">
         <div class="col-6 col-sm-4 col-md-2 col-lg p-0 services__service">
             <img
@@ -105,7 +171,7 @@
         </div>
         <div class="col-6 col-sm-4 col-md-2 col-lg p-0 services__service">
             <img class="services__image img-fluid" src="<?php echo home_url(); ?>/wp-content/uploads/2021/12/boton-creacioncontenido.jpg" alt="">
-            <div class="px-2">Creación de contenido institucional</div>
+            <div class="px-2">Creación de contenido</div>
         </div>
         <div class="col-6 col-sm-4 col-md-2 col-lg p-0 services__service">
             <img class="services__image img-fluid" src="<?php echo home_url(); ?>/wp-content/uploads/2021/12/boton-asesorias.jpg" alt="">
@@ -117,28 +183,31 @@
         </div>
         <div class="col-6 col-sm-4 col-md-2 col-lg p-0 services__service">
             <img class="services__image img-fluid" src="<?php echo home_url(); ?>/wp-content/uploads/2021/12/boton-mktingdigital.jpg" alt="">
-            <div class="px-2">Marketing digital y manejo de redes sociales</div>
+            <div class="px-2">Marketing digital</div>
         </div>
         <div class="col-6 col-sm-4 col-md-2 col-lg p-0 services__service">
             <img class="services__image img-fluid" src="<?php echo home_url(); ?>/wp-content/uploads/2021/12/boton-videofotografia.jpg" alt="">
-            <div class="px-2">Video y fotografía institucional</div>
+            <div class="px-2">Video y fotografía</div>
         </div>
         <div class="col-6 col-sm-4 col-md-2 col-lg p-0 services__service">
             <img class="services__image img-fluid" src="<?php echo home_url(); ?>/wp-content/uploads/2021/12/boton-espacios.jpg" alt="">
-            <div class="px-2">Espacios y pautas en nuestra página, síntesis y agencia de noticias</div>
+            <div class="px-2">Espacios y pautas</div>
         </div>
     </div>
 </div>
 
 <!-- Blog -->
-<div class="container">
+<div class="container pt-5">
+    <div class="row row-cols my-5">
+        <h2 class="about__title text-center">Blog</h2>
+    </div>
     <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
             <div class="card border-0">
-                <img src="<?php echo home_url(); ?>/wp-content/uploads/2021/12/9_2021_1632445184764-150x150.png" class="card-img-top" alt="...">
+                <img src="<?php echo home_url(); ?>/wp-content/uploads/2021/12/Matilde-Gomez-Vega.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title blog__card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <h5 class="card-title blog__card-title">Política ciudadana</h5>
+                    <p class="card-text">Ante las desgracias ocurridas con las inundaciones, las personas afectadas no han estado solas...</p>
                 </div>
                 <div class="card-footer bg-transparent border-0">
                     <a class="blog__link" href="#">Ver más...</a>
@@ -147,10 +216,10 @@
         </div>
         <div class="col">
             <div class="card border-0">
-                <img src="<?php echo home_url(); ?>/wp-content/uploads/2021/12/9_2021_1632445184764-150x150.png" class="card-img-top" alt="...">
+                <img src="<?php echo home_url(); ?>/wp-content/uploads/2021/12/Matilde-Gomez-Vega.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title blog__card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <h5 class="card-title blog__card-title">Política ciudadana</h5>
+                    <p class="card-text">Ante las desgracias ocurridas con las inundaciones, las personas afectadas no han estado solas...</p>
                 </div>
                 <div class="card-footer bg-transparent border-0">
                     <a class="blog__link" href="#">Ver más...</a>
@@ -159,10 +228,10 @@
         </div>
         <div class="col">
             <div class="card border-0">
-                <img src="<?php echo home_url(); ?>/wp-content/uploads/2021/12/9_2021_1632445184764-150x150.png" class="card-img-top" alt="...">
+                <img src="<?php echo home_url(); ?>/wp-content/uploads/2021/12/Matilde-Gomez-Vega.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title blog__card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <h5 class="card-title blog__card-title">Política ciudadana</h5>
+                    <p class="card-text">Ante las desgracias ocurridas con las inundaciones, las personas afectadas no han estado solas...</p>
                 </div>
                 <div class="card-footer bg-transparent border-0">
                     <a class="blog__link" href="#">Ver más...</a>
@@ -171,10 +240,10 @@
         </div>
         <div class="col">
             <div class="card border-0">
-                <img src="<?php echo home_url(); ?>/wp-content/uploads/2021/12/9_2021_1632445184764-150x150.png" class="card-img-top" alt="...">
+                <img src="<?php echo home_url(); ?>/wp-content/uploads/2021/12/Matilde-Gomez-Vega.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title blog__card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <h5 class="card-title blog__card-title">Política ciudadana</h5>
+                    <p class="card-text">Ante las desgracias ocurridas con las inundaciones, las personas afectadas no han estado solas...</p>
                 </div>
                 <div class="card-footer bg-transparent border-0">
                     <a class="blog__link" href="#">Ver más...</a>
@@ -183,10 +252,10 @@
         </div>
         <div class="col">
             <div class="card border-0">
-                <img src="<?php echo home_url(); ?>/wp-content/uploads/2021/12/9_2021_1632445184764-150x150.png" class="card-img-top" alt="...">
+                <img src="<?php echo home_url(); ?>/wp-content/uploads/2021/12/Matilde-Gomez-Vega.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title blog__card-title">Card title</h5>
-                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <h5 class="card-title blog__card-title">Política ciudadana</h5>
+                    <p class="card-text">Ante las desgracias ocurridas con las inundaciones, las personas afectadas no han estado solas...</p>
                 </div>
                 <div class="card-footer bg-transparent border-0">
                     <a class="blog__link" href="#">Ver más...</a>
@@ -197,52 +266,59 @@
 </div>
 
 <!-- clientes -->
-<div class="container">
-    <h1>Clientes</h1>
+<div class="container py-5">
+    <div class="row row-cols my-5">
+        <h2 class="about__title text-center">Clientes</h2>
+    </div>
     <div class="row row-cols-2 row-cols-md-5 g-4">
-        <div class="col">
-            <img src="<?php echo home_url(); ?>/wp-content/uploads/2021/12/9_2021_1632445184764-150x150.png" class="card-img-top" alt="...">
-        </div>
-        <div class="col">
-            <img src="<?php echo home_url(); ?>/wp-content/uploads/2021/12/9_2021_1632445184764-150x150.png" class="card-img-top" alt="...">
-        </div>
-        <div class="col">
-            <img src="<?php echo home_url(); ?>/wp-content/uploads/2021/12/9_2021_1632445184764-150x150.png" class="card-img-top" alt="...">
-        </div>
-        <div class="col">
-            <img src="<?php echo home_url(); ?>/wp-content/uploads/2021/12/9_2021_1632445184764-150x150.png" class="card-img-top" alt="...">
-        </div>
-        <div class="col">
-            <img src="<?php echo home_url(); ?>/wp-content/uploads/2021/12/9_2021_1632445184764-150x150.png" class="card-img-top" alt="...">
-        </div>
-        <div class="col">
-            <img src="<?php echo home_url(); ?>/wp-content/uploads/2021/12/9_2021_1632445184764-150x150.png" class="card-img-top" alt="...">
-        </div>
+        <?php
+            foreach($clients as $key => $client) {
+        ?>
+            <div class="col">
+                <img src="<?php echo $client->image; ?>" class="card-img-top" alt="...">
+            </div>
+        <?php
+            }
+        ?>
     </div>
 </div>
 
 <!-- Contacto -->
-<div>
-    <div class="row justify-content-center">
-        <div class="col-4">
-            <h2>Contacto</h2>
-            <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            </div>
-            <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            </div>
-            <div class="mb-3">
-                <div class="form-floating">
-                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-                    <label for="floatingTextarea">Comments</label>
+<div class="contact d-flex align-items-center justify-content-center">
+    <div class="row justify-content-center w-100">
+        <div class="col-8 d-flex contact__container">
+            <div class="col-6 contact__contact">
+                <h2 class="contact__form-title">Contacto</h2>
+                <div class="mb-3">
+                    <input
+                        type="email"
+                        class="form-control contact__input"
+                        id="exampleInputEmail1"
+                        aria-describedby="emailHelp"
+                        placeholder="Correo electrónico"
+                    >
+                </div>
+                <div class="mb-3 mt-4">
+                    <input
+                        type="email"
+                        class="form-control contact__input"
+                        id="exampleInputEmail1"
+                        aria-describedby="emailHelp"
+                        placeholder="Nombre"
+                    >
+                </div>
+                <div class="mb-3 mt-4">
+                    <textarea class="form-control contact__input-textarea" id="exampleFormControlTextarea1" rows="3" placeholder="Mensaje"></textarea>
+                </div>
+                <div class="">
+                    <span class="fw-light">Av. Revolución 3107 Plaza Bella, Periodistas, 42060 Pachuca de Soto, Hgo.</span>
+                    <span class="fw-light">+1 (234) 56789, +1 987 654 3210</span>
+                    <span class="fw-light">contacto@cimaconsultores.com</span>
                 </div>
             </div>
-        </div>
-        <div class="col-3">
-            Mapa
+            <div class="col-6">
+                Mapa
+            </div>
         </div>
     </div>
 </div>

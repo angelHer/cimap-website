@@ -77,3 +77,36 @@
         text-decoration: none;
     }
 }
+
+.contact {
+    background-image: url(../../public/images/home/contacto.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: scroll, scroll;
+    background-size: cover;
+    background-origin: padding-box, padding-box;
+    background-clip: border-box, border-box;
+    min-height: 560px;
+    &__container {
+        background-color: #f3f3f3e1;
+        border-radius: 25px;
+    }
+    &__contact {
+        padding: 20px;
+    }
+    &__input {
+        background: transparent;
+        border: none;
+        border-top: 1px solid rgb(88, 88, 88);
+        border-radius: 0;
+        &-textarea {
+            background: transparent;
+            border: none;
+            border-radius: 0;
+            border: 1px solid rgb(88, 88, 88);
+        }
+    }
+    &__form-title {
+        margin-bottom: 35px;
+    }
+}
