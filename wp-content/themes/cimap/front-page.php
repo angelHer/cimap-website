@@ -80,7 +80,23 @@
 
 <!-- Carrousel -->
 <div class="content home">
-    <div id="carouselExampleSlidesOnly" class="carousel slide h-100" data-bs-ride="carousel">
+    <div id="carouselHome" class="carousel slide h-100" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <?php
+                foreach($slides as $key => $slide) {
+            ?>
+                <button
+                    type="button"
+                    data-bs-target="#carouselHome"
+                    data-bs-slide-to="<?php echo $key; ?>"
+                    class="home__indicators <?php if ($key===0) { echo 'active'; }?>"
+                    <?php if ($key===0) { echo 'aria-current="true"'; }?>
+                    aria-label="Slide 1"
+                ></button>
+            <?php
+                }
+            ?>
+        </div>
         <div class="carousel-inner h-100">
             <?php
                 foreach($slides as $key => $slide) {
@@ -92,11 +108,11 @@
                 }
             ?>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselHome" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselHome" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
@@ -118,9 +134,9 @@
 </div>
 
 <!-- Productos / servicios -->
-<div class="pt-5">
+<div class="pt-5" id="servicios">
     <div class="row row-cols my-5">
-        <h2 class="about__title text-center">Servicios/Productos</h2>
+        <h2 class="about__title text-center">Servicios / Productos</h2>
     </div>
     <div class="row w-100 m-0">
         <div class="col-6 col-sm-4 col-md-2 col-lg p-0 services__service">
@@ -197,7 +213,7 @@
 </div>
 
 <!-- Blog -->
-<div class="container pt-5">
+<div class="container pt-5" id="blog">
     <div class="row row-cols my-5">
         <h2 class="about__title text-center">Blog</h2>
     </div>
@@ -266,7 +282,7 @@
 </div>
 
 <!-- clientes -->
-<div class="container py-5">
+<div class="container py-5" id="clientes">
     <div class="row row-cols my-5">
         <h2 class="about__title text-center">Clientes</h2>
     </div>
@@ -284,7 +300,7 @@
 </div>
 
 <!-- Contacto -->
-<div class="contact d-flex align-items-center justify-content-center">
+<div class="contact d-flex align-items-center justify-content-center" id="contacto">
     <div class="row justify-content-center w-100">
         <div class="col-8 d-flex contact__container">
             <div class="col-6 contact__contact">

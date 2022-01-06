@@ -11294,6 +11294,7 @@ textarea.form-control-lg {
 
 .home {
   height: 75vh;
+  margin-top: 35px;
 }
 .home__carousel-steps {
   background-color: rgba(0, 0, 0, 0);
@@ -11303,6 +11304,11 @@ textarea.form-control-lg {
   background-size: cover;
   background-origin: padding-box, padding-box;
   background-clip: border-box, border-box;
+}
+.home__indicators {
+  width: 15px !important;
+  height: 15px !important;
+  border-radius: 50%;
 }
 
 .about {
@@ -11318,7 +11324,7 @@ textarea.form-control-lg {
 }
 .about__title {
   text-transform: uppercase;
-  color: #dfdfdf;
+  color: #ededed;
   font-size: 60px;
   font-weight: bold;
 }

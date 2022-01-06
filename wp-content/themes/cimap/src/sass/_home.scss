@@ -1,5 +1,6 @@
 .home {
     height: 75vh;
+    margin-top: 35px;
     &__carousel-steps {
         background-color: rgba(0, 0, 0, 0);
         background-position: center center;
@@ -8,6 +9,11 @@
         background-size: cover;
         background-origin: padding-box, padding-box;
         background-clip: border-box, border-box;
+    }
+    &__indicators {
+        width: 15px !important;
+        height: 15px !important;
+        border-radius: 50%;
     }
 }
 
