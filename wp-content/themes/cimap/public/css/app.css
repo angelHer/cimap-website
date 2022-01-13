@@ -11281,6 +11281,9 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.header {
+  margin-top: 35px;
+}
 .header__logo {
   height: 50px;
 }
@@ -11294,7 +11297,6 @@ textarea.form-control-lg {
 
 .home {
   height: 75vh;
-  margin-top: 35px;
 }
 .home__carousel-steps {
   background-color: rgba(0, 0, 0, 0);
@@ -11394,4 +11396,21 @@ textarea.form-control-lg {
 }
 .contact__form-title {
   margin-bottom: 35px;
+}
+
+.single-post {
+  margin-top: 80px;
+}
+.single-post__img {
+  max-width: 400px;
+}
+.single-post__title {
+  color: #ff7300;
+}
+.single-post__text {
+  text-align: justify;
+}
+
+.justify {
+  text-align: justify;
 }

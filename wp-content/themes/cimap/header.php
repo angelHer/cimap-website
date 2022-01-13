@@ -11,7 +11,7 @@
 
 <body>
 
-    <header>
+    <header class="header">
         <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light shadow">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
