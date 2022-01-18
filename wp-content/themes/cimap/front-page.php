@@ -218,66 +218,26 @@
         <h2 class="about__title text-center">Blog</h2>
     </div>
     <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col">
-            <div class="card border-0">
-                <img src="<?php echo home_url(); ?>/wp-content/uploads/2021/12/Matilde-Gomez-Vega.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title blog__card-title">Política ciudadana</h5>
-                    <p class="card-text">Ante las desgracias ocurridas con las inundaciones, las personas afectadas no han estado solas...</p>
-                </div>
-                <div class="card-footer bg-transparent border-0">
-                    <a class="blog__link" href="#">Ver más...</a>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card border-0">
-                <img src="<?php echo home_url(); ?>/wp-content/uploads/2021/12/Matilde-Gomez-Vega.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title blog__card-title">Política ciudadana</h5>
-                    <p class="card-text">Ante las desgracias ocurridas con las inundaciones, las personas afectadas no han estado solas...</p>
-                </div>
-                <div class="card-footer bg-transparent border-0">
-                    <a class="blog__link" href="#">Ver más...</a>
+        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+            <div class="col">
+                <div class="card border-0">
+                    <?php
+                        if ( has_post_thumbnail() ) {
+                            the_post_thumbnail('post-thumbnails', array(
+                                'class' => 'card-img-top blog__thumbnail'
+                            ));
+                        }
+                    ?>
+                    <div class="card-body">
+                        <h5 class="card-title blog__card-title"><?php the_title(); ?></h5>
+                        <?php the_excerpt(); ?>
+                    </div>
+                    <div class="card-footer bg-transparent border-0">
+                        <a class="blog__link" href="<?php the_permalink(); ?>">Ver más...</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col">
-            <div class="card border-0">
-                <img src="<?php echo home_url(); ?>/wp-content/uploads/2021/12/Matilde-Gomez-Vega.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title blog__card-title">Política ciudadana</h5>
-                    <p class="card-text">Ante las desgracias ocurridas con las inundaciones, las personas afectadas no han estado solas...</p>
-                </div>
-                <div class="card-footer bg-transparent border-0">
-                    <a class="blog__link" href="#">Ver más...</a>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card border-0">
-                <img src="<?php echo home_url(); ?>/wp-content/uploads/2021/12/Matilde-Gomez-Vega.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title blog__card-title">Política ciudadana</h5>
-                    <p class="card-text">Ante las desgracias ocurridas con las inundaciones, las personas afectadas no han estado solas...</p>
-                </div>
-                <div class="card-footer bg-transparent border-0">
-                    <a class="blog__link" href="#">Ver más...</a>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card border-0">
-                <img src="<?php echo home_url(); ?>/wp-content/uploads/2021/12/Matilde-Gomez-Vega.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title blog__card-title">Política ciudadana</h5>
-                    <p class="card-text">Ante las desgracias ocurridas con las inundaciones, las personas afectadas no han estado solas...</p>
-                </div>
-                <div class="card-footer bg-transparent border-0">
-                    <a class="blog__link" href="#">Ver más...</a>
-                </div>
-            </div>
-        </div>
+        <?php endwhile; endif; ?>
     </div>
 </div>
 

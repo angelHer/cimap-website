@@ -81,6 +81,9 @@
         color: $cimap-link;
         text-decoration: none;
     }
+    &__thumbnail {
+        height: 100%;
+    }
 }
 
 .contact {

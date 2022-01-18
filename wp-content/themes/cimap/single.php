@@ -6,11 +6,14 @@
         <div class="row">
             <div class="col-12 text-center">
                 <h1 class="single-post__title"><?php the_title(); ?></h1>
-                <img
-                    src="<?php echo home_url(); ?>/wp-content/uploads/2021/12/Matilde-Gomez-Vega.jpg"
-                    class="single-post__img"
-                    alt="..."
-                >
+
+                <?php
+                    if ( has_post_thumbnail() ) {
+                        the_post_thumbnail('post-thumbnails', array(
+                            'class' => 'single-post__img'
+                        ));
+                    }
+                ?>
                 <p class="fw-lighter"><span><?php the_author(); ?></span> | <span>Publicado: <?php the_time('F j, Y'); ?></span></p>
             </div>
             <?php the_content(); ?>
