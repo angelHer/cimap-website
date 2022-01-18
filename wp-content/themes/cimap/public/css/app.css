@@ -11346,7 +11346,7 @@ textarea.form-control-lg {
 .services__tooltip > .tooltip-inner {
   background: rgba(233, 233, 233, 0.952);
   min-width: 300px;
-  height: 250px;
+  min-height: 250px;
   color: black;
   text-align: left;
   padding: 10px;
