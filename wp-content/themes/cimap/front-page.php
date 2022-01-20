@@ -406,7 +406,7 @@
 <!-- Contacto -->
 <div class="contact d-flex align-items-center justify-content-center" id="contacto">
     <div class="row justify-content-center w-100">
-        <div class="col-8 d-flex contact__container">
+        <div class="col-8 d-flex contact__container pe-0">
             <div class="col-6 contact__contact">
                 <h2 class="contact__form-title">Contacto</h2>
                 <div class="mb-3">
@@ -430,6 +430,9 @@
                 <div class="mb-3 mt-4">
                     <textarea class="form-control contact__input-textarea" id="exampleFormControlTextarea1" rows="3" placeholder="Mensaje"></textarea>
                 </div>
+                <div class="mb-3 mt-4 d-flex justify-content-end">
+                    <button type="button" class="btn btn-light">Enviar</button>
+                </div>
                 <div class="">
                     <span class="fw-light">Av. Revolución 3107 Plaza Bella, Periodistas, 42060 Pachuca de Soto, Hgo.</span>
                     <span class="fw-light">+1 (234) 56789, +1 987 654 3210</span>
@@ -437,7 +440,13 @@
                 </div>
             </div>
             <div class="col-6">
-                Mapa
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1113.8297283026998!2d-98.7455302468183!3d20.114776876515695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d109fe4b975257%3A0xf0250188bde51ca5!2sAv%20Revoluci%C3%B3n%201307%2C%20Periodistas%2C%2042060%20Pachuca%20de%20Soto%2C%20Hgo.!5e0!3m2!1ses-419!2smx!4v1642547702694!5m2!1ses-419!2smx"
+                    width="100%"
+                    height="100%"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                ></iframe>
             </div>
         </div>
     </div>

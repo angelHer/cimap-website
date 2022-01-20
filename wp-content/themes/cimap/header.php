@@ -14,7 +14,7 @@
     <header class="header">
         <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light shadow">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">
                     <img class="navbar-brand header__logo" src="<?php echo home_url(); ?>/wp-content/themes/cimap/public/images/logo-cimap-150x150.png" alt ="">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
