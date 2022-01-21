@@ -95,12 +95,16 @@
     background-origin: padding-box, padding-box;
     background-clip: border-box, border-box;
     min-height: 560px;
+    @include media-breakpoint-down(md) {
+        padding: 40px 0px;
+    }
     &__container {
         background-color: #f3f3f3e1;
-        border-radius: 25px;
-    }
-    &__contact {
+        border-radius: 25px 0px 0px 25px;
         padding: 20px;
+        @include media-breakpoint-down(md) {
+            border-radius: 25px 25px 0px 0px
+        }
     }
     &__input {
         background: transparent;
@@ -116,5 +120,10 @@
     }
     &__form-title {
         margin-bottom: 35px;
+    }
+    &__map {
+        @include media-breakpoint-down(md) {
+            height: 500px;
+        }
     }
 }

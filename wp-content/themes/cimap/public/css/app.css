@@ -11378,12 +11378,20 @@ textarea.form-control-lg {
   background-clip: border-box, border-box;
   min-height: 560px;
 }
+@media (max-width: 767.98px) {
+  .contact {
+    padding: 40px 0px;
+  }
+}
 .contact__container {
   background-color: #f3f3f3e1;
-  border-radius: 25px;
-}
-.contact__contact {
+  border-radius: 25px 0px 0px 25px;
   padding: 20px;
+}
+@media (max-width: 767.98px) {
+  .contact__container {
+    border-radius: 25px 25px 0px 0px;
+  }
 }
 .contact__input {
   background: transparent;
@@ -11399,6 +11407,11 @@ textarea.form-control-lg {
 }
 .contact__form-title {
   margin-bottom: 35px;
+}
+@media (max-width: 767.98px) {
+  .contact__map {
+    height: 500px;
+  }
 }
 
 .single-post {
