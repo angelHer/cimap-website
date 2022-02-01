@@ -76,6 +76,11 @@
             'image' => "" . $templateUri . "/public/images/clients/20-AlmaQuezada.png"
         ]
     ];
+
+    $the_query = new WP_Query(array(
+        'post_type' => 'post_type_columnista',
+        'posts_per_page' => 6
+    ));
 ?>
 
 <!-- Carrousel -->
@@ -359,10 +364,10 @@
 <!-- Blog -->
 <div class="container pt-5" id="blog">
     <div class="row row-cols my-5">
-        <h2 class="about__title text-center">Blog</h2>
+        <h2 class="about__title text-center">Columnistas</h2>
     </div>
     <div class="row row-cols-1 row-cols-md-3 g-4">
-        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+        <?php if ( $the_query -> have_posts() ) : while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
             <div class="col">
                 <div class="card border-0">
                     <?php
@@ -374,7 +379,15 @@
                     ?>
                     <div class="card-body">
                         <h5 class="card-title blog__card-title"><?php the_title(); ?></h5>
-                        <?php the_excerpt(); ?>
+                        <p>
+                            <?php
+                                $key_1_value = get_post_meta( get_the_ID(), 'introduction', true );
+                                // Check if the custom field has a value.
+                                if ( ! empty( $key_1_value ) ) {
+                                    echo $key_1_value;
+                                }
+                            ?>
+                        </p>
                     </div>
                     <div class="card-footer bg-transparent border-0">
                         <a class="blog__link" href="<?php the_permalink(); ?>">Ver más...</a>
@@ -382,6 +395,13 @@
                 </div>
             </div>
         <?php endwhile; endif; ?>
+    </div>
+    <div class="d-flex justify-content-center">
+        <!-- <?php
+            get_template_part( 'template-parts/content', 'pagination');
+            echo bootstrap_pagination($the_query);
+        ?> -->
+        <a type="button" class="btn button__primary" href="<?php echo esc_url( home_url( '/post_type_columnista' ) ); ?>">Ver más</a>
     </div>
 </div>
 

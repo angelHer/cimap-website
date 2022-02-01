@@ -23,22 +23,25 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                            <a class="nav-link active" aria-current="page" href="<?php echo esc_url( home_url( '/' ) ); ?>">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#about">Nosotros</a>
+                            <a class="nav-link" href="<?php echo esc_url( home_url( '/#about' ) ); ?>">Nosotros</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link" href="#servicios">Servicios / productos</a>
+                            <a class="nav-link" href="<?php echo esc_url( home_url( '/#servicios' ) ); ?>">Servicios / productos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#blog">Blog</a>
+                            <a class="nav-link" href="<?php echo esc_url( home_url( '/#blog' ) ); ?>">Columnistas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#clientes">Clientes</a>
+                            <a class="nav-link" href="<?php echo esc_url( home_url( '/blog' ) ); ?>">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contacto">Contacto</a>
+                            <a class="nav-link" href="<?php echo esc_url( home_url( '/#clientes' ) ); ?>">Clientes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="<?php echo esc_url( home_url( '/#contacto' ) ); ?>">Contacto</a>
                         </li>
                     </ul>
                 </div>

@@ -11282,7 +11282,7 @@ textarea.form-control-lg {
   }
 }
 .header {
-  margin-top: 35px;
+  margin-top: 75px;
 }
 .header__logo {
   height: 50px;
@@ -11429,4 +11429,10 @@ textarea.form-control-lg {
 
 .justify {
   text-align: justify;
+}
+
+.button__primary {
+  background-color: #ff7300;
+  border-color: #ff7300;
+  color: #fff;
 }

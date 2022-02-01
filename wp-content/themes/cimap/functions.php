@@ -39,3 +39,23 @@ function wpdocs_excerpt_more( $more ) {
     return '...';
 }
 add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
+
+/**
+ * Sidebar de blog
+ */
+function register_blog_sidebar() {
+    /* Register the 'primary' sidebar. */
+    register_sidebar(
+        array(
+            'id'            => 'blog_sidebar',
+            'name'          => __( 'Blog' ),
+            'description'   => __( 'descripcion' ),
+            'before_widget' => '<div class="card-body">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h4>',
+            'after_title'   => '</h4><hr>',
+        )
+    );
+    /* Repeat register_sidebar() code for additional sidebars. */
+}
+add_action( 'widgets_init', 'register_blog_sidebar' );
