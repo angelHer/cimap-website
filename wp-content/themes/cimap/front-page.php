@@ -4,13 +4,16 @@
     $templateUri = get_template_directory_uri();
     $slides =  [
         (object) [
-            'image' => "" . $templateUri . "/public/images/home/carrousel/imagen1.jpg"
+            'image' => "" . $templateUri . "/public/images/home/carrousel/imagen1.jpg",
+            'image_movil' => "" . $templateUri . "/public/images/home/carrousel/imagen1-movil.jpg"
         ],
         (object) [
-            'image' => "" . $templateUri . "/public/images/home/carrousel/imagen2.jpg"
+            'image' => "" . $templateUri . "/public/images/home/carrousel/imagen2.jpg",
+            'image_movil' => "" . $templateUri . "/public/images/home/carrousel/imagen2-movil.jpg"
         ],
         (object) [
-            'image' => "" . $templateUri . "/public/images/home/carrousel/imagen3.jpg"
+            'image' => "" . $templateUri . "/public/images/home/carrousel/imagen3.jpg",
+            'image_movil' => "" . $templateUri . "/public/images/home/carrousel/imagen3-movil.jpg"
         ]
     ];
 
@@ -107,7 +110,8 @@
                 foreach($slides as $key => $slide) {
             ?>
                 <div class="carousel-item <?php if ($key===0) { echo 'active'; }?> h-100">
-                    <div class="home__carousel-steps h-100" style="background-image: url(<?php echo $slide->image; ?>)"></div>
+                    <div class="home__carousel-steps h-100 d-none d-sm-none d-md-block" style="background-image: url(<?php echo $slide->image; ?>)"></div>
+                    <div class="home__carousel-steps h-100 d-block d-sm-block d-md-none" style="background-image: url(<?php echo $slide->image_movil; ?>)"></div>
                 </div>
             <?php
                 }
