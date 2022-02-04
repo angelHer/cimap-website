@@ -151,7 +151,7 @@
         <div class="col-6 col-sm-4 col-md-2 col-lg p-0 services__service">
             <img
                 class="services__image img-fluid"
-                src="<?php echo home_url(); ?>/wp-content/uploads/2021/12/boton-sintesis.jpg"
+                src="<?php echo $templateUri ?>/public/images/services/boton-sintesis.jpg"
                 alt=""
                 data-bs-custom-class="services__tooltip"
                 data-bs-toggle="tooltip"
@@ -167,7 +167,7 @@
         <div class="col-6 col-sm-4 col-md-2 col-lg p-0 services__service">
             <img
                 class="services__image img-fluid"
-                src="<?php echo home_url(); ?>/wp-content/uploads/2021/12/boton-monitoreo.jpg"
+                src="<?php echo $templateUri ?>/public/images/services/boton-monitoreo.jpg"
                 alt=""
                 data-bs-custom-class="services__tooltip"
                 data-bs-toggle="tooltip"
@@ -182,7 +182,7 @@
         <div class="col-6 col-sm-4 col-md-2 col-lg p-0 services__service">
             <img
                 class="services__image img-fluid"
-                src="<?php echo home_url(); ?>/wp-content/uploads/2021/12/boton-foda.jpg"
+                src="<?php echo $templateUri ?>/public/images/services/boton-foda.jpg"
                 alt=""
                 data-bs-custom-class="services__tooltip"
                 data-bs-toggle="tooltip"
@@ -197,7 +197,7 @@
         <div class="col-6 col-sm-4 col-md-2 col-lg p-0 services__service">
             <img
                 class="services__image img-fluid"
-                src="<?php echo home_url(); ?>/wp-content/uploads/2021/12/boton-analisis.jpg"
+                src="<?php echo $templateUri ?>/public/images/services/boton-analisis.jpg"
                 alt=""
                 data-bs-custom-class="services__tooltip"
                 data-bs-toggle="tooltip"
@@ -212,7 +212,7 @@
         <div class="col-6 col-sm-4 col-md-2 col-lg p-0 services__service">
             <img
                 class="services__image img-fluid"
-                src="<?php echo home_url(); ?>/wp-content/uploads/2021/12/boton-manejocrisis.jpg"
+                src="<?php echo $templateUri ?>/public/images/services/boton-manejocrisis.jpg"
                 alt=""
                 data-bs-custom-class="services__tooltip"
                 data-bs-toggle="tooltip"
@@ -227,7 +227,7 @@
         <div class="col-6 col-sm-4 col-md-2 col-lg p-0 services__service">
             <img
                 class="services__image img-fluid"
-                src="<?php echo home_url(); ?>/wp-content/uploads/2021/12/boton-estrategiasintegrales.jpg"
+                src="<?php echo $templateUri ?>/public/images/services/boton-estrategiasintegrales.jpg"
                 alt=""
                 data-bs-custom-class="services__tooltip"
                 data-bs-toggle="tooltip"
@@ -242,7 +242,7 @@
         <div class="col-6 col-sm-4 col-md-2 col-lg p-0 services__service">
             <img
                 class="services__image img-fluid"
-                src="<?php echo home_url(); ?>/wp-content/uploads/2021/12/boton-analisis.jpg"
+                src="<?php echo $templateUri ?>/public/images/services/boton-analisis.jpg"
                 alt=""
                 data-bs-custom-class="services__tooltip"
                 data-bs-toggle="tooltip"
@@ -258,7 +258,7 @@
         <div class="col-6 col-sm-4 col-md-2 col-lg p-0 services__service">
             <img
                 class="services__image img-fluid"
-                src="<?php echo home_url(); ?>/wp-content/uploads/2021/12/boton-capacitaciones.jpg"
+                src="<?php echo $templateUri ?>/public/images/services/boton-capacitaciones.jpg"
                 alt=""
                 data-bs-custom-class="services__tooltip"
                 data-bs-toggle="tooltip"
@@ -274,7 +274,7 @@
         <div class="col-6 col-sm-4 col-md-2 col-lg p-0 services__service">
             <img
                 class="services__image img-fluid"
-                src="<?php echo home_url(); ?>/wp-content/uploads/2021/12/boton-creacioncontenido.jpg"
+                src="<?php echo $templateUri ?>/public/images/services/boton-creacioncontenido.jpg"
                 alt=""
                 data-bs-custom-class="services__tooltip"
                 data-bs-toggle="tooltip"
@@ -289,7 +289,7 @@
         <div class="col-6 col-sm-4 col-md-2 col-lg p-0 services__service">
             <img
                 class="services__image img-fluid"
-                src="<?php echo home_url(); ?>/wp-content/uploads/2021/12/boton-asesorias.jpg"
+                src="<?php echo $templateUri ?>/public/images/services/boton-asesorias.jpg"
                 alt=""
                 data-bs-custom-class="services__tooltip"
                 data-bs-toggle="tooltip"
@@ -304,7 +304,7 @@
         <div class="col-6 col-sm-4 col-md-2 col-lg p-0 services__service">
             <img
                 class="services__image img-fluid"
-                src="<?php echo home_url(); ?>/wp-content/uploads/2021/12/boton-creacioncampana.jpg"
+                src="<?php echo $templateUri ?>/public/images/services/boton-creacioncampana.jpg"
                 alt=""
                 data-bs-custom-class="services__tooltip"
                 data-bs-toggle="tooltip"
@@ -319,7 +319,7 @@
         <div class="col-6 col-sm-4 col-md-2 col-lg p-0 services__service">
             <img
                 class="services__image img-fluid"
-                src="<?php echo home_url(); ?>/wp-content/uploads/2021/12/boton-mktingdigital.jpg"
+                src="<?php echo $templateUri ?>/public/images/services/boton-mktingdigital.jpg"
                 alt=""
                 data-bs-custom-class="services__tooltip"
                 data-bs-toggle="tooltip"
@@ -334,7 +334,7 @@
         <div class="col-6 col-sm-4 col-md-2 col-lg p-0 services__service">
             <img
                 class="services__image img-fluid"
-                src="<?php echo home_url(); ?>/wp-content/uploads/2021/12/boton-videofotografia.jpg"
+                src="<?php echo $templateUri ?>/public/images/services/boton-videofotografia.jpg"
                 alt=""
                 data-bs-custom-class="services__tooltip"
                 data-bs-toggle="tooltip"
@@ -349,7 +349,7 @@
         <div class="col-6 col-sm-4 col-md-2 col-lg p-0 services__service">
             <img
                 class="services__image img-fluid"
-                src="<?php echo home_url(); ?>/wp-content/uploads/2021/12/boton-espacios.jpg"
+                src="<?php echo $templateUri ?>/public/images/services/boton-espacios.jpg"
                 alt=""
                 data-bs-custom-class="services__tooltip"
                 data-bs-toggle="tooltip"
