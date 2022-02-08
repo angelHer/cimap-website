@@ -84,6 +84,11 @@
         'post_type' => 'post_type_columnista',
         'posts_per_page' => 6
     ));
+
+    $query_services = new WP_Query(array(
+        'post_type' => 'post_type_servicios',
+        'posts_per_page' => 28
+    ));
 ?>
 
 <!-- Carrousel -->
@@ -148,220 +153,31 @@
         <h2 class="about__title text-center">Servicios / Productos</h2>
     </div>
     <div class="row w-100 m-0">
-        <div class="col-6 col-sm-4 col-md-2 col-lg p-0 services__service">
-            <img
-                class="services__image img-fluid"
-                src="<?php echo $templateUri ?>/public/images/services/boton-sintesis.jpg"
-                alt=""
-                data-bs-custom-class="services__tooltip"
-                data-bs-toggle="tooltip"
-                data-bs-html="true"
-                title="
-                    <h2 class='services__tooltip-title'>Síntesis digital de noticias</h2>
-                    <p>Documento diario que contiene lo más destacable de la prensa local y nacional en medios impresos y digitales.</p>
-                    <p>Estar informado siempre es un elemento clave en la toma de decisiones.</p>
-                "
-            >
-            <div class="px-2">Síntesis digital de noticias</div>
-        </div>
-        <div class="col-6 col-sm-4 col-md-2 col-lg p-0 services__service">
-            <img
-                class="services__image img-fluid"
-                src="<?php echo $templateUri ?>/public/images/services/boton-monitoreo.jpg"
-                alt=""
-                data-bs-custom-class="services__tooltip"
-                data-bs-toggle="tooltip"
-                data-bs-html="true"
-                title="
-                    <h2 class='services__tooltip-title'>Monitoreo de medios</h2>
-                    <p>Monitoreo de la publicidad y contenidos en 11 periódicos, locales y nacionales, 6 estaciones de radio regionales, portales de internet y redes sociales.</p>
-                "
-            >
-            <div class="px-2">Monitoreo de medios</div>
-        </div>
-        <div class="col-6 col-sm-4 col-md-2 col-lg p-0 services__service">
-            <img
-                class="services__image img-fluid"
-                src="<?php echo $templateUri ?>/public/images/services/boton-foda.jpg"
-                alt=""
-                data-bs-custom-class="services__tooltip"
-                data-bs-toggle="tooltip"
-                data-bs-html="true"
-                title="
-                    <h2 class='services__tooltip-title'>Diagnóstico FODA</h2>
-                    <p>Se analizará la situación mediática con la finalidad de detectar fortalezas y áreas de oportunidad que potencialicen su posicionamiento individual y como parte de una estructura organizacional más amplia.</p>
-                "
-            >
-            <div class="px-2">Diagnóstico FODA</div>
-        </div>
-        <div class="col-6 col-sm-4 col-md-2 col-lg p-0 services__service">
-            <img
-                class="services__image img-fluid"
-                src="<?php echo $templateUri ?>/public/images/services/boton-analisis.jpg"
-                alt=""
-                data-bs-custom-class="services__tooltip"
-                data-bs-toggle="tooltip"
-                data-bs-html="true"
-                title="
-                    <h2 class='services__tooltip-title'>Análisis</h2>
-                    <p>Documento realizado por un equipo multidisciplinario, el cual concentrará datos e información que será útil para la toma de decisiones. Puede ser de medios de información, de temas políticos o tendencias coyunturales.</p>
-                "
-            >
-            <div class="px-2">Análisis</div>
-        </div>
-        <div class="col-6 col-sm-4 col-md-2 col-lg p-0 services__service">
-            <img
-                class="services__image img-fluid"
-                src="<?php echo $templateUri ?>/public/images/services/boton-manejocrisis.jpg"
-                alt=""
-                data-bs-custom-class="services__tooltip"
-                data-bs-toggle="tooltip"
-                data-bs-html="true"
-                title="
-                    <h2 class='services__tooltip-title'>Manejo de crisis</h2>
-                    <p>¿Una crisis se puede prevenir o evitar? Una crisis no se puede evitar, pero sí prevenir y disminuir el impacto negativo. ¿Cómo hacerlo? CIMAP te asesora con planes y estrategias de contención.</p>
-                "
-            >
-            <div class="px-2">Manejo de crisis</div>
-        </div>
-        <div class="col-6 col-sm-4 col-md-2 col-lg p-0 services__service">
-            <img
-                class="services__image img-fluid"
-                src="<?php echo $templateUri ?>/public/images/services/boton-estrategiasintegrales.jpg"
-                alt=""
-                data-bs-custom-class="services__tooltip"
-                data-bs-toggle="tooltip"
-                data-bs-html="true"
-                title="
-                    <h2 class='services__tooltip-title'>Estrategias integrales de comunicación</h2>
-                    <p>¿Cómo transmitir de manera efectiva y conectar con la ciudadanía? Convierte la comunicación en un activo estratégico, un factor importante para el éxito de tu empresa o institución creando un plan al corto, mediano y largo plazo que le dé un crecimiento de valor a tu gestión.</p>
-                "
-            >
-            <div class="px-2">Estrategias integrales de comunicación</div>
-        </div>
-        <div class="col-6 col-sm-4 col-md-2 col-lg p-0 services__service">
-            <img
-                class="services__image img-fluid"
-                src="<?php echo $templateUri ?>/public/images/services/boton-analisis.jpg"
-                alt=""
-                data-bs-custom-class="services__tooltip"
-                data-bs-toggle="tooltip"
-                data-bs-html="true"
-                title="
-                    <h2 class='services__tooltip-title'>Encuestas organizacionales</h2>
-                    <p>Empleados con la camiseta puesta, suman a la organización. ¿Quieres saber cómo se encuentra tu comunicación interna? CIMAP te ofrece la elaboración de encuestas internas para saber cómo mejorar la comunicación de tu organización, y te ofrecen un diagnóstico con líneas de acción e implementación.</p>
-                "
-            >
-            <div class="px-2">Encuestas organizacionales</div>
-        </div>
-
-        <div class="col-6 col-sm-4 col-md-2 col-lg p-0 services__service">
-            <img
-                class="services__image img-fluid"
-                src="<?php echo $templateUri ?>/public/images/services/boton-capacitaciones.jpg"
-                alt=""
-                data-bs-custom-class="services__tooltip"
-                data-bs-toggle="tooltip"
-                data-bs-html="true"
-                title="
-                    <h2 class='services__tooltip-title'>Capacitaciones integrales</h2>
-                    <p>CIMAP puede capacitar a tus áreas de comunicación para eficientar tus procesos y recursos.</p>
-                    <p>Podrán aprender la creación de boletines, procesos de comunicación, manejo de crisis y uso de redes sociales.</p>
-                "
-            >
-            <div class="px-2">Capacitaciones integrales</div>
-        </div>
-        <div class="col-6 col-sm-4 col-md-2 col-lg p-0 services__service">
-            <img
-                class="services__image img-fluid"
-                src="<?php echo $templateUri ?>/public/images/services/boton-creacioncontenido.jpg"
-                alt=""
-                data-bs-custom-class="services__tooltip"
-                data-bs-toggle="tooltip"
-                data-bs-html="true"
-                title="
-                    <h2 class='services__tooltip-title'>Creación de contenido</h2>
-                    <p>¿Tus redes y tus boletines siempre dicen lo mismo? El futuro de la comunicación es el contenido, nosotros te decimos cómo mejorarlo y te apoyamos a crearlo.</p>
-                "
-            >
-            <div class="px-2">Creación de contenido</div>
-        </div>
-        <div class="col-6 col-sm-4 col-md-2 col-lg p-0 services__service">
-            <img
-                class="services__image img-fluid"
-                src="<?php echo $templateUri ?>/public/images/services/boton-asesorias.jpg"
-                alt=""
-                data-bs-custom-class="services__tooltip"
-                data-bs-toggle="tooltip"
-                data-bs-html="true"
-                title="
-                    <h2 class='services__tooltip-title'>Asesorías personalizadas</h2>
-                    <p>Mediante una reunión presencial o vía Zoom, te ayudaremos a resolver cualquier problemática en el ámbito mediático y gubernamental.</p>
-                "
-            >
-            <div class="px-2">Asesorías personalizadas</div>
-        </div>
-        <div class="col-6 col-sm-4 col-md-2 col-lg p-0 services__service">
-            <img
-                class="services__image img-fluid"
-                src="<?php echo $templateUri ?>/public/images/services/boton-creacioncampana.jpg"
-                alt=""
-                data-bs-custom-class="services__tooltip"
-                data-bs-toggle="tooltip"
-                data-bs-html="true"
-                title="
-                    <h2 class='services__tooltip-title'>Creación de campañas</h2>
-                    <p>Generamos campañas publicitarias innovadoras.</p>
-                "
-            >
-            <div class="px-2">Creación de campañas</div>
-        </div>
-        <div class="col-6 col-sm-4 col-md-2 col-lg p-0 services__service">
-            <img
-                class="services__image img-fluid"
-                src="<?php echo $templateUri ?>/public/images/services/boton-mktingdigital.jpg"
-                alt=""
-                data-bs-custom-class="services__tooltip"
-                data-bs-toggle="tooltip"
-                data-bs-html="true"
-                title="
-                    <h2 class='services__tooltip-title'>Marketing digital</h2>
-                    <p>Alto contenido de valor que te permita conectar con tu público meta, mediante una parrillada de marketing afin a tu público meta.</p>
-                "
-            >
-            <div class="px-2">Marketing digital</div>
-        </div>
-        <div class="col-6 col-sm-4 col-md-2 col-lg p-0 services__service">
-            <img
-                class="services__image img-fluid"
-                src="<?php echo $templateUri ?>/public/images/services/boton-videofotografia.jpg"
-                alt=""
-                data-bs-custom-class="services__tooltip"
-                data-bs-toggle="tooltip"
-                data-bs-html="true"
-                title="
-                    <h2 class='services__tooltip-title'>Video y fotografía</h2>
-                    <p>Contamos con el equipo y personal especializado para la realización de shootings.</p>
-                "
-            >
-            <div class="px-2">Video y fotografía</div>
-        </div>
-        <div class="col-6 col-sm-4 col-md-2 col-lg p-0 services__service">
-            <img
-                class="services__image img-fluid"
-                src="<?php echo $templateUri ?>/public/images/services/boton-espacios.jpg"
-                alt=""
-                data-bs-custom-class="services__tooltip"
-                data-bs-toggle="tooltip"
-                data-bs-html="true"
-                title="
-                    <h2 class='services__tooltip-title'>Espacios y pautas</h2>
-                    <p>Reportajes especiales y boletines informativos que serán difundidos en nuestras redes sociales.</p>
-                    <p>Patrocinio y menciones semanales en secciones y contenidos generados por CIMAP.</p>
-                "
-            >
-            <div class="px-2">Espacios y pautas</div>
-        </div>
+        <?php if ( $query_services -> have_posts() ) : while ($query_services -> have_posts()) : $query_services -> the_post(); ?>
+            <div class="col-6 col-sm-4 col-md-2 col-lg p-0 services__service">
+                <?php
+                    if ( has_post_thumbnail() ) {
+                ?>
+                    <a href="<?php the_permalink(); ?>">
+                        <?php
+                            the_post_thumbnail('post-thumbnails', array(
+                                'class' => 'services__image img-fluid',
+                                'data-bs-custom-class' => 'services__tooltip',
+                                'data-bs-toggle' => 'tooltip',
+                                'data-bs-html' => "true",
+                                'title' => "
+                                    <h2 class='services__tooltip-title'>".get_post_meta( get_the_ID(), 'titulo_de_miniatura', true )."</h2>
+                                    <p>".get_post_meta( get_the_ID(), 'contenido_de_miniatura', true )."</p>
+                                "
+                            ));
+                        ?>
+                        </a>
+                <?php
+                    }
+                ?>
+                <div class="px-2"><?php the_title(); ?></div>
+            </div>
+        <?php endwhile; endif; ?>
     </div>
 </div>
 
