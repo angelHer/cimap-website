@@ -87,7 +87,9 @@
 
     $query_services = new WP_Query(array(
         'post_type' => 'post_type_servicios',
-        'posts_per_page' => 28
+        'posts_per_page' => 28,
+        'orderby' => 'ID',
+        'order' => 'ASC'
     ));
 ?>
 
