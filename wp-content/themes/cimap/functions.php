@@ -10,6 +10,13 @@ function add_theme_scripts() {
     // wp_enqueue_script( 'popper', 'https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js', array ('jquery'), 2.10, true);
     // wp_enqueue_script( 'bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js', array ( 'popper' ), 5.1, true);
     wp_enqueue_script( 'script', get_template_directory_uri() . '/public/js/app.js', array (), 1, true);
+
+    /**
+     * Variable globar para ajax
+     */
+    wp_localize_script( 'script', 'app_vars', array(
+        'ajax_url' => admin_url('admin-ajax.php')
+    ));
 }
 add_action( 'wp_enqueue_scripts', 'add_theme_scripts' );
 
@@ -59,3 +66,43 @@ function register_blog_sidebar() {
     /* Repeat register_sidebar() code for additional sidebars. */
 }
 add_action( 'widgets_init', 'register_blog_sidebar' );
+
+
+/**
+ * Formulario de contacto
+ */
+add_action( 'wp_ajax_contact', 'contact_form');
+add_action( 'wp_ajax_nopriv_contact', 'contact_form');
+function contact_form() {
+    $formdata = [];
+    wp_parse_str( $_POST['contact'], $formdata );
+
+    $from = get_option( 'admin_email');
+
+    // Headers
+    $headers[] = 'Content-Type: text/html; charset=UTF-8';
+    $headers[] = 'From:' . $from;
+    $headers[] = 'Reply-to:' . $formdata['Email'];
+
+    $to = $from;
+
+    // Subject
+    $subject = "Nuevo mensaje desde página web de " . $formdata['Email'];
+
+    // message
+    $message = '';
+    foreach($formdata as $index => $field) {
+        $message .= '<strong>' . $index . '</strong>: ' . $field . '<br />';
+    }
+
+    try {
+        if(wp_mail( $to, $subject, $message, $headers)) {
+            wp_send_json_success('enviado');
+        } else {
+            wp_send_json_error('error');
+        }
+    } catch (Exception $e) {
+        wp_send_json_error( $e->getMessage());
+    }
+
+}

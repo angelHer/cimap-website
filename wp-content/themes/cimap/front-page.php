@@ -249,31 +249,50 @@
 <div class="contact d-flex align-items-center justify-content-center" id="contacto">
     <div class="row justify-content-center w-100">
         <div class="col col-sm-8 col-md-4 contact__container">
-            <h2 class="contact__form-title">Contacto</h2>
-            <div class="mb-3">
-                <input
-                    type="email"
-                    class="form-control contact__input"
-                    id="exampleInputEmail1"
-                    aria-describedby="emailHelp"
-                    placeholder="Correo electrónico"
-                >
-            </div>
-            <div class="mb-3 mt-4">
-                <input
-                    type="email"
-                    class="form-control contact__input"
-                    id="exampleInputEmail1"
-                    aria-describedby="emailHelp"
-                    placeholder="Nombre"
-                >
-            </div>
-            <div class="mb-3 mt-4">
-                <textarea class="form-control contact__input-textarea" id="exampleFormControlTextarea1" rows="3" placeholder="Mensaje"></textarea>
-            </div>
-            <div class="mb-3 mt-4 d-flex justify-content-end">
-                <button type="button" class="btn btn-light">Enviar</button>
-            </div>
+            <form id="frmContact">
+                <h2 class="contact__form-title">Contacto</h2>
+                <div class="mb-3">
+                    <input
+                        type="email"
+                        class="form-control contact__input"
+                        id="email"
+                        name="Email"
+                        required
+                        aria-describedby="emailHelp"
+                        placeholder="Correo electrónico"
+                    >
+                </div>
+                <div class="mb-3 mt-4">
+                    <input
+                        type="text"
+                        class="form-control contact__input"
+                        id="name"
+                        name="Nombre"
+                        required
+                        aria-describedby="emailHelp"
+                        placeholder="Nombre"
+                    >
+                </div>
+                <div class="mb-3 mt-4">
+                    <textarea
+                        class="form-control contact__input-textarea"
+                        id="message"
+                        name="Mensaje"
+                        required
+                        rows="3"
+                        placeholder="Mensaje"
+                    ></textarea>
+                </div>
+                <div class="mb-3 mt-4 d-flex justify-content-end">
+                    <button type="submit" class="btn btn-light">Enviar</button>
+                </div>
+                <div id="success-message" class="alert alert-success" role="alert" style="display: none;">
+                    Gracias por ponerte en contacto con nosotros, recibiras respuesta lo antes posible.
+                </div>
+                <div id="error-message" class="alert alert-danger" role="alert" style="display: none;">
+                    Lo sentimos, ocurrió un error al enviar el mensaje.
+                </div>
+            </form>
             <div class="">
                 <span class="fw-light">Av. Revolución 3107 Plaza Bella, Periodistas, 42060 Pachuca de Soto, Hgo.</span>
                 <span class="fw-light">+1 (234) 56789, +1 987 654 3210</span>
