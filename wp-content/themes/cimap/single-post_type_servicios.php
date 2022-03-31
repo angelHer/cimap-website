@@ -11,8 +11,8 @@
                 <h1 class="single-post__title"><?php the_title(); ?></h1>
                 <?php the_content(); ?>
             </div>
-            <div class="col-12 col-sm-12 col-md-6 d-flex align-items-center">
-                <img src="<?php echo $image_url ?>" class="img-fluid">
+            <div class="col-12 col-sm-12 col-md-6 d-flex align-items-start">
+                <img src="<?php echo $image_url ?>" class="img-fluid service__img">
             </div>
         </div>
     </div>

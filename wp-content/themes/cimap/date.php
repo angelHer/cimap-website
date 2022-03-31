@@ -3,8 +3,7 @@
 <div class="container">
     <div class="row g-5 mt-4">
         <div class="col-md-12   ">
-            <h1 class="text-center">Por fecha</h1>
-            <hr>
+            <h2 class="about__title text-center">Por fecha</h2>
         </div>
         <div class="col-md-12">
             <div class="row row-cols-1 row-cols-md-3 g-4">
